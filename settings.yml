@@ -25,12 +25,12 @@ dismissible:
     en: 'Allow the banner to be closed by users'
 collapsible:
   type: bool
-  default: false
+  default: true
   description: 
     en: 'Allow the banner to be expanded and collapsed by users'
 default_collapsed_state:
   type: enum
-  default: collapsed
+  default: expanded
   choices:
     - expanded
   description: 
@@ -153,11 +153,6 @@ fourth_column_content:
   type: string
   textarea: true
   default: ''
-  description:
-    en: '<br><br>
-        <h2>Column Sizes</h2>
-        Use a percentage to make columns more wide or narrow. When set to "auto", the column will fill the 
-        available space evenly with other "auto" columns.'
 fifth_column_content:
   type: string
   textarea: true
@@ -216,6 +211,64 @@ eighth_column_content:
         <h2>Column Sizes</h2>
         Use a percentage to make columns more wide or narrow. When set to "auto", the column will fill the 
         available space evenly with other "auto" columns.'
+ninth_column_content:
+  type: string
+  textarea: true
+  default: |
+            <h3>A simple box</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+              Sed id congue eros, sit amet suscipit libero. Nunc vitae 
+              placerat est.
+            </p>
+            <div class="banner-list">
+              <ul>
+                <li><a href="https://twitter.com/discourse" target="_blank">A tweet</a> to wake up my friends</li>
+                <li>Put the photos in the bag</li>
+                <li>Rearrange books in the study</li>
+                <li>And the notes?</li>
+              </ul>
+            </div>
+tenth_column_content:
+  type: string
+  textarea: true
+  default: |
+            <h3>Another simple box</h3>
+            <p>
+              Integer velit ante, 
+              <a href="https://discourse.org">DISCOURSE</a> 
+              amet tristique in, gravida at ligula. Sed gravida mauris id 
+              neque vestibulum semper. Suspendisse potenti. Nam 
+              nec maximus ligula. Ut eget semper est. Sed ornare 
+              sit amet justo eu rutrum. Integer sit amet facilisis ipsum.
+            </p>
+
+            <div class="buttons" id="my-button">
+              <a href="#" class="btn btn-icon-text">My new button</a>
+            </div>
+eleventh_column_content:
+  type: string
+  textarea: true
+  default: |
+            <h3>Yet another simple box</h3>
+            <p>
+              Pellentesque ut lacinia nunc, eu molestie nulla. 
+              Pellentesque viverra nisi urna, at hendrerit nisl 
+              sodales in. Morbi auctor sodales nisi, eget aliquam 
+              justo maximus in. Suspendisse a felis a massa 
+              elementum pellentesque quis eget dolor. Orci varius 
+              natoque penatibus et magnis dis parturient montes, 
+              nascetur ridiculus mus.
+            </p>
+twelfth_column_content:
+  type: string
+  textarea: true
+  default: ''
+  description:
+    en: '<br><br>
+        <h2>Column Sizes</h2>
+        Use a percentage to make columns more wide or narrow. When set to "auto", the column will fill the 
+        available space evenly with other "auto" columns.'
 first_column_size:
   type: string
   default: 'auto'
@@ -240,6 +293,19 @@ seventh_column_size:
 eighth_column_size:
   type: string
   default: ''
+ninth_column_size:
+  type: string
+  default: 'auto'
+tenth_column_size:
+  type: string
+  default: 'auto'
+eleventh_column_size:
+  type: string
+  default: 'auto'
+twelfth_column_size:
+  type: string
+  default: ''  
+
   description: 
     en: '<br><br>
         <h2>Column Icons</h2>
@@ -271,3 +337,16 @@ seventh_column_icon:
 eighth_column_icon:
   type: string
   default: ''
+ninth_column_icon:
+  type: string
+  default: 'cog'
+tenth_column_icon:
+  type: string
+  default: 'https://meta-s3-cdn.freetls.fastly.net/original/3X/b/3/b33be9538df3547fcf9d1a51a4637d77392ac6f9.png'
+eleventh_column_icon:
+  type: string
+  default: 'wrench'
+twelfth_column_icon:
+  type: string
+  default: ''  
+
