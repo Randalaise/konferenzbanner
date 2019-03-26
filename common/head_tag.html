@@ -8,6 +8,14 @@ let columnIcons = [
   settings.second_column_icon,
   settings.third_column_icon,
   settings.fourth_column_icon
+  settings.fifth_column_icon,
+  settings.sixth_column_icon,
+  settings.seventh_column_icon,
+  settings.eighth_column_icon
+  settings.ninth_column_icon,
+  settings.tenth_column_icon,
+  settings.eleventh_column_icon,
+  settings.twelfth_column_icon
 ];
 
 api.createWidget("banner-column-icon", {
@@ -171,6 +179,74 @@ api.modifyClass("component:site-header", {
           </div>
           {{/if}}
         </div>
+        <div class="row">
+          {{#if (theme-setting 'fifth_column_content')}}
+          <div class="fifth_column single-box">
+            {{#if (theme-setting 'fifth_column_icon')}}
+              {{mount-widget widget="banner-column-icon" args=(hash column=0)}}
+            {{/if}}
+            <div>{{{theme-setting 'fifth_column_content'}}}</div>
+          </div>
+          {{/if}}
+          {{#if (theme-setting 'sixth_column_content')}}
+          <div class="sixth_column single-box">
+            {{#if (theme-setting 'sixth_column_icon')}}
+              {{mount-widget widget="banner-column-icon" args=(hash column=1)}}
+            {{/if}}
+            <div>{{{theme-setting 'sixth_column_content'}}}</div>
+          </div>
+          {{/if}}
+          {{#if (theme-setting 'seventh_column_content')}}
+          <div class="seventh_column single-box">
+            {{#if (theme-setting 'seventh_column_icon')}}
+              {{mount-widget widget="banner-column-icon" args=(hash column=2)}}
+            {{/if}}
+            <div>{{{theme-setting 'seventh_column_content'}}}</div>
+          </div>
+          {{/if}}
+          {{#if (theme-setting 'eighth_column_content')}}
+          <div class="eighth_column single-box">
+            {{#if (theme-setting 'eighth_column_icon')}}
+              {{mount-widget widget="banner-column-icon" args=(hash column=3)}}
+            {{/if}}
+            <div>{{{theme-setting 'eighth_column_content'}}}</div>
+          </div>
+          {{/if}}
+        </div>
+       <div class="row">
+          {{#if (theme-setting 'ninth_column_content')}}
+          <div class="ninth_column single-box">
+            {{#if (theme-setting 'ninth_column_icon')}}
+              {{mount-widget widget="banner-column-icon" args=(hash column=0)}}
+            {{/if}}
+            <div>{{{theme-setting 'ninth_column_content'}}}</div>
+          </div>
+          {{/if}}
+          {{#if (theme-setting 'tenth_column_content')}}
+          <div class="tenth_column single-box">
+            {{#if (theme-setting 'tenth_column_icon')}}
+              {{mount-widget widget="banner-column-icon" args=(hash column=1)}}
+            {{/if}}
+            <div>{{{theme-setting 'tenth_column_content'}}}</div>
+          </div>
+          {{/if}}
+          {{#if (theme-setting 'eleventh_column_content')}}
+          <div class="eleventh_column single-box">
+            {{#if (theme-setting 'eleventh_column_icon')}}
+              {{mount-widget widget="banner-column-icon" args=(hash column=2)}}
+            {{/if}}
+            <div>{{{theme-setting 'eleventh_column_content'}}}</div>
+          </div>
+          {{/if}}
+          {{#if (theme-setting 'twelfth_column_content')}}
+          <div class="twelfth_column single-box">
+            {{#if (theme-setting 'twelfth_column_icon')}}
+              {{mount-widget widget="banner-column-icon" args=(hash column=3)}}
+            {{/if}}
+            <div>{{{theme-setting 'twelfth_column_content'}}}</div>
+          </div>
+          {{/if}}
+        </div>     
       </div>
     </div>
   </section>
